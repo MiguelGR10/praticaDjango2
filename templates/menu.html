@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar-fixed">          
+        <nav >
+            <div class="nav-wrapper cfd8dc white z-depth-5 center">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons black-text">menu</i></a>   
+                     <img src="../../resources/img/logo.png" width="125" alt="" >
+            </div>
+        </nav>
+    </div>
+
+<!-- menu lateral-->
+        <ul id="slide-out" class="sidenav">
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:index'%}"><i class="material-icons">star</i>Inicio</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Tecnologia'%}"><i class="material-icons">computer</i>Tecnologia</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Deportes'%}"><i class="material-icons">directions_bike</i>Deportes</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Ciencias'%}"><i class="material-icons">wb_incandescent</i>Ciencias</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Espectaculos'%}"><i class="material-icons">play_circle_filled</i>Espectáculos</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Salud'%}"><i class="material-icons">mood</i>Salud</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Historia'%}"><i class="material-icons">language</i>Historia</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Educacion'%}"><i class="material-icons">book</i>Educación</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="{% url 'blog:Videojuegos'%}"><i class="material-icons">games</i>Videojuegos</a></li>
+            <li><div class="divider"></div></li>
+        </ul>
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                M.AutoInit();
+            });
+        </script>
+    
+</body>
+</html>
